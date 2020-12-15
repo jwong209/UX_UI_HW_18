@@ -18,7 +18,7 @@ button{
     font-weight: bold;
     border: 2px solid green;
     background-color: white;
-    padding: 8px;
+    padding: 6px;
     border-radius: 8px;
 }
 button:hover{
@@ -192,26 +192,30 @@ header{
 }
 
 .imgwork{
-    background-image: url(images/gov3.png);
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-  height: auto;
-    /* outline: 1px red solid; */
+    height: auto;
     grid-area: imgwork;
-    /* border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px; */
 }
-
-
+.gov{
+    background-image: url(images/gov3.png);
+}
+.moodley{
+    background-image: url(images/moodley.png);
+}
+.hygien{
+    background-image: url(images/hygien.png);
+}
 h2{
     font-size: 30px;
     
 }
 .ojtop{
     background-color: #fdd502;
-    height: 120px;
+    height: 100px;
     padding: 45px;
     /* border-top-right-radius: 5px; */
     flex-direction: column;
@@ -236,7 +240,7 @@ h2{
    
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
     /* border-radius: 5px; */
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .textproj{
     /* outline: 1px green solid; */
@@ -263,17 +267,63 @@ h2{
     font-size: 18px;
     line-height: 2;
 }
-.viewcase{
-    font-size: 18px;
-    margin-top: 10px;
-    color: green;
-    font-weight: bold;
-    border: 2px solid green;
-    background-color: white;
-    padding: 8px;
+/* -----------------OTHER WORK area---------------- */
+.otherwork{
+    background-color: #97d8bb;
+    text-align: center;
+    padding-bottom: 40px;
+    
 }
-
-
+.othergrid{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "illprof illtext"
+    ;
+}
+.other{
+    font-size: 60px;
+    color: white;
+    
+}
+.illimg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: illprof;
+    /* outline: 1px red solid; */
+    padding-right: 90px;
+}
+.illimg img{
+    height: 250px;
+}
+.illtext{
+    
+    padding-top: 10px;
+    text-align:left;
+    /* outline: 1px blue solid; */
+    
+}
+.illdesc{
+    font-size: 25px;
+    font-weight: bold;
+    color: #3e584d;
+    line-height: 1.5;
+}
+.buttonwhite{
+    background-color: #97d8bb;
+    color: white;
+    border-color: white;
+}
+.buttonwhite:hover{
+    color: #f0e934;
+    border-color: #f0e934;
+    
+}
+.ojill{
+    color: #f0e934;
+}
 /* -----------------footer area---------------- */
 footer{
     text-align: center;
@@ -306,6 +356,7 @@ footer{
 .copyright{
     padding: 10px;
     background-color: #e1f3eb;
+    color: #3e584d;
 }
 .footsep{
     background-color: #c4c4c4;
@@ -459,7 +510,7 @@ footer{
      
     }
     .imgwork{
-        background-image: url(images/gov3.png);
+        
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -467,7 +518,15 @@ footer{
         height: auto;
         /* outline: 1px red solid; */
         grid-area: imgwork;
-       
+    }
+    .gov{
+        background-image: url(images/gov3.png);
+    }
+    .moodley{
+        background-image: url(images/moodley.png);
+    }
+    .hygien{
+        background-image: url(images/hygien.png);
     }
     .proj{
         
@@ -581,4 +640,61 @@ footer{
 .colskill{
     flex-direction: column;
 }
+
+/* ----OTHER WORK----- */
+    .otherwork{
+        background-color: #97d8bb;
+        text-align: center;
+        padding-bottom: 40px;
+        padding-top: 10px;
+    }
+    .othergrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "illprof"
+        "illtext"
+        ;
+    }
+    .other{
+        font-size: 35px;
+        color: white;
+    }
+    .illimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: illprof;
+        /* outline: 1px red solid; */
+        padding-right: 0px;
+    }
+    .illimg img{
+        height: 200px;
+    
+    }
+    .illtext{
+        
+        padding-top: 10px;
+        text-align:center;
+        /* outline: 1px blue solid; */
+        
+    }
+    .illdesc{
+        font-size: 25px;
+        font-weight: bold;
+        color: #3e584d;
+        line-height: 1.5;
+        padding: 5px;
+    }
+    .buttonwhite{
+        background-color: #97d8bb;
+        color: white;
+        border-color: white;
+    }
+    .buttonwhite:hover{
+        color: #f0e934;
+        border-color: #f0e934;
+        
+    }
 }
